@@ -6,6 +6,7 @@ import CreatePost from "./pages/CreatePost";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
+document.title = "Blog-with-react-and-firebase"
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   const signUserOut = () => {
